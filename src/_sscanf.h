@@ -11,9 +11,6 @@
 
 #define LEN_STR 1000
 #define LEN 100
-#define BUFF_SIZE 512
-
-void *to_upper(const char *str);
 
 int _sscanf(const char *str, const char *format, ...);
 
@@ -62,5 +59,6 @@ long double make_point_e(sscanf_format *format_str, int ind_point, int len);
 long double make_inf_nan(sscanf_format *format_str, int sign);
 int is_e(sscanf_format *format_str, int *sign_e, int *power);
 int assign_spec_n(sscanf_format *format_str);
+void *to_upper(const char *str);
 
 #endif  //  SRC__SSCANF_H_
